@@ -4,7 +4,7 @@
 }
 
 :root{
-    --button-color: white;
+    --button-color: #ffffff;
     --button-bg-color: #E02C6D;
 }
 
@@ -60,6 +60,8 @@
 header{
     padding: 90px 120px;
 }
+
+/* nav styles */
 .navbar{
     justify-content: space-between;
     align-items: center;
@@ -84,4 +86,58 @@ header{
 .search, .cart{
     font-size: 1.25rem;
     cursor: pointer;
+}
+
+/* hero styles */
+.hero{
+    margin-top: 50px;
+    align-items: center;
+    justify-content: space-between;
+}
+.hero-title{
+    font-weight: 700;
+    font-size: 3.25rem;
+    text-align: left;
+    margin-bottom: 20px;
+}
+.hero-description{
+    font-weight: 600;
+    font-size: 1rem;
+    text-align: left;
+    margin-bottom: 20px;
+}
+.hero-btn{
+    font-family: poppins;
+    font-weight: 700;
+    font-size: 1rem;
+    text-align: left;
+    padding: 15px 24px;
+    color: var(--button-color);
+    background-color: var(--button-bg-color);
+    border: none;
+    outline: none;
+    border-radius: 41px; 
+}
+.hero-btn-icon{
+    margin-left: 8px;
+}
+.img-cont{
+    margin-right: 12px;
+    width: 475px;
+    height: 475px;
+    background-image: url("../images/Circle\ design.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.hero-img{
+    width: 100%;
+}
+
+.brands-logo-cont{
+    max-width: 1110px;
+    margin: 100px auto;
+    display: grid;
+    grid-template-columns: repeat(7,1fr);
+    align-items: center;
 }
