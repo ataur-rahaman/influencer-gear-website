@@ -141,3 +141,65 @@ header{
     grid-template-columns: repeat(7,1fr);
     align-items: center;
 }
+
+/* responsive header section */
+    @media screen and (max-width:576px) {
+        header{
+            padding: 30px 10px;
+        } 
+        .navbar{
+            flex-direction: column;
+            gap: 30px;
+            /* justify-content: space-between;
+            align-items: center; */
+        }
+        .site-logo{
+            font-weight: 700;
+            font-size: 1rem;
+        }
+        .nav-links{
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+        .hero{
+            flex-direction: column-reverse;
+            gap: 20px;
+        }
+        .img-cont{
+            margin-right: 12px;
+            width: 257px;
+            height: 257px;
+        }
+        .hero-title{
+            font-weight: 700;
+            font-size: 1.75rem;
+            text-align: center;
+            margin-bottom: 15px;
+        }
+        .hero-btn-cont{
+            text-align: center;
+        }
+        .hero-btn{
+            font-family: poppins;
+            font-weight: 500;
+            font-size: 1rem;
+            text-align: center;
+            padding: 10px 25px;
+        }
+        .hero-btn-icon{
+            margin-left: 5px;
+        }
+        .hero-description{
+            font-weight: 500;
+            font-size: 0.85rem;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .brands-logo-cont{
+            margin: 50px auto;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+        
+    }
