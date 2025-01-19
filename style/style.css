@@ -137,15 +137,19 @@ header{
 .brands-logo-cont{
     max-width: 1110px;
     margin: 100px auto;
-    display: grid;
-    grid-template-columns: repeat(7,1fr);
+    display: flex;
+    justify-content: space-between;
     align-items: center;
+    gap: 60px;
+}
+.logo-cont .logo{
+    width: 100%;
 }
 
-/* responsive header section */
+/* responsive header section for small device start */
     @media screen and (max-width:576px) {
         header{
-            padding: 30px 10px;
+            padding: 30px 20px;
         } 
         .navbar{
             flex-direction: column;
@@ -199,7 +203,79 @@ header{
             margin: 50px auto;
             display: flex;
             flex-wrap: wrap;
-            gap: 10px;
-        }
-        
+            justify-content: center;
+            align-items: center;
+            gap: 30px;
+        } 
     }
+/* responsive header section for small device end */
+
+/* responsive header section for medium device start */
+    @media screen and (min-width: 576px) and (max-width: 992px) {
+        header{
+            padding: 30px 20px;
+        }   
+        .navbar{
+            width: 80vw;
+            margin: 0 auto;
+            flex-direction: column;
+            gap: 20px;
+            align-items: flex-start;
+            justify-content: flex-start;
+        } 
+        .site-logo{
+            font-weight: 700;
+            font-size: 1.3rem;
+        }
+        .nav-links{
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }  
+        .hero{
+            width: 80vw;
+            margin: 50px auto;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+        }
+        .hero-title{
+            font-weight: 700;
+            font-size: 2rem;
+            text-align: left;
+            margin-bottom: 15px;
+        } 
+        .hero-img-cont{
+            width: 300px;
+            height: 300px;
+        }
+        .img-cont{
+            width: 300px;
+            height: 300px;
+        } 
+        .img-cont .hero-img{
+            width: 100%;
+        } 
+        .hero-btn{
+            font-family: poppins;
+            font-weight: 500;
+            font-size: 1rem;
+            padding: 10px 25px;
+        }
+        .hero-description{
+            font-weight: 500;
+            font-size: 1rem;
+            text-align: left;
+            margin-bottom: 20px;
+        }
+        .brands-logo-cont{
+            width: 80vw;
+            margin: 40px auto;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            gap: 40px;
+        }
+    }
+/* responsive header section for medium device end */
