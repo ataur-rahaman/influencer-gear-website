@@ -288,9 +288,6 @@ header{
 /* responsive header section for medium device end */
 
 /* product card related styles */
-main{
-    
-}
 .product-section{
     display: flex;
     flex-direction: column;
@@ -325,3 +322,39 @@ main{
 .see-more-arrow{
     margin-left: 5px;
 }
+
+/* responsive design for product section */
+    /* for small devices */
+@media screen and (max-width: 576px) {
+    .product-container-title{
+        font-family: poppins;
+        font-weight: 600;
+        font-size: 1rem;
+        text-align: center;
+    }
+    .cards-container{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        gap: 30px;
+    }
+}
+    /* for small devices */
+    /* for medium devices */
+@media screen and (min-width: 576px) and (max-width: 992px) {
+    .product-section{
+        
+    }
+    .product-container-title{
+        font-family: poppins;
+        font-weight: 600;
+        font-size: 1.5rem;
+        text-align: center;
+    }
+    .cards-container{
+        width: 95vw;
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        gap: 30px;
+    }
+}
+    /* for medium devices */
